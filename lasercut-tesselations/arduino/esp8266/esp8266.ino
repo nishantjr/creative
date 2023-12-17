@@ -59,7 +59,7 @@ void server_handle_not_found() {
 // ------------------ LEDs -------------------
 // -------------------------------------------
 
-int const pin_num[3] = {2, 3, 4};
+int const pin_num[3] = {2, 6, 4};
 
 void leds_setup() {
   for (int i = 0; i < 3; i++) {
@@ -93,7 +93,6 @@ void setup() {
 void loop() {
     Serial.println("Loop.");
     Serial1.println("Loop.");
-//    server_loop();
     leds_loop();
-    delay(100);
+    delay(10000);
 }
